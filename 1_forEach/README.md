@@ -9,11 +9,10 @@ Before getting started, make sure that you have a JavaScript console open (like 
 ```js
 var sumImperative = function(array) {
   var result = 0;
-  for (var i = 0; i < array.length; i++) {
-    result = result + array[i];
-  }
+  array.forEach(i => result = result +i)
   return result;
 };
+
 
 var sumDeclarative = function(array) {
   // your code here
